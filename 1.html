@@ -1,131 +1,80 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>線上娛樂城</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unlock Your Future</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #444;
-            overflow: hidden;
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            padding: 14px 20px;
-            text-align: center;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #575757;
         }
         .container {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .hero {
-            background-color: #1c1c1c;
-            color: white;
-            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
             text-align: center;
         }
-        .games, .promotions, .contact {
-            padding: 20px;
-            background-color: white;
-            margin-top: 20px;
-            border-radius: 8px;
+        h1 {
+            font-size: 36px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 28px;
+            color: #2980b9;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px 25px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .cta-button:hover {
+            background-color: #c0392b;
+        }
+        .highlight {
+            color: #e74c3c;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>線上娛樂城</h1>
-        <p>最佳娛樂遊戲體驗，隨時隨地玩樂</p>
-    </header>
+    <div class="container">
+        <h1>Success Starts Now</h1>
 
-    <nav>
-        <a href="#home">首頁</a>
-        <a href="#games">遊戲介紹</a>
-        <a href="#promotions">優惠活動</a>
-        <a href="#signup">註冊/登入</a>
-        <a href="#contact">聯繫我們</a>
-    </nav>
+        <h2>Are you ready to take the first step towards your future?</h2>
 
-    <div id="home" class="hero">
-        <h2>歡迎來到線上娛樂城！</h2>
-        <p>無論你是新玩家還是老手，我們都有最刺激的遊戲和最佳的優惠等你來挑戰！</p>
+        <p>College life is full of challenges and opportunities. But the secret to success lies in how you respond to both. Imagine stepping into your future with confidence, knowing you're equipped with the right skills and knowledge to thrive. </p>
+
+        <p><strong>Elite learning is no longer just a dream—it's within your reach.</strong></p>
+
+        <p>Our platform offers more than just courses. We offer personalized learning paths, cutting-edge strategies, and a roadmap that helps you reach your goals faster and more efficiently. Every hour you invest today brings you one step closer to your success story.</p>
+
+        <p><span class="highlight">Don’t wait. The future is already here.</span> The skills that will shape tomorrow's leaders are being learned today. Will you be one of them?</p>
+
+        <p>Whether you’re tackling exams or planning for your dream career, our programs help you make the most of every opportunity. We’re not just preparing you for college—we’re preparing you for life after graduation.</p>
+
+        <p><strong>Success is built step by step. Let each moment count.</strong></p>
+
+        <a href="#" class="cta-button">Start Your Journey Today</a>
     </div>
-
-    <div id="games" class="games">
-        <h2>熱門遊戲</h2>
-        <p>我們提供各種熱門的娛樂遊戲，包括但不限於：</p>
-        <ul>
-            <li>輪盤</li>
-            <li>21點</li>
-            <li>老虎機</li>
-            <li>彩票</li>
-            <li>體育博彩</li>
-        </ul>
-    </div>
-
-    <div id="promotions" class="promotions">
-        <h2>當前優惠</h2>
-        <p>不容錯過的優惠活動：</p>
-        <ul>
-            <li>首存紅利 100% 加碼</li>
-            <li>每日登錄獎勳</li>
-            <li>周末娛樂回饋</li>
-        </ul>
-    </div>
-
-    <div id="signup" class="signup">
-        <h2>註冊 / 登入</h2>
-        <p>請輸入您的帳號和密碼來註冊或登入，開始享受娛樂城的遊戲體驗！</p>
-        <form action="#">
-            <label for="username">帳號:</label>
-            <input type="text" id="username" name="username"><br><br>
-            <label for="password">密碼:</label>
-            <input type="password" id="password" name="password"><br><br>
-            <input type="submit" value="登入">
-            <input type="button" value="註冊" onclick="window.location.href='#'">
-        </form>
-    </div>
-
-    <div id="contact" class="contact">
-        <h2>聯繫我們</h2>
-        <p>有任何問題，請隨時聯繫我們的客服團隊：</p>
-        <ul>
-            <li>Email: support@onlinecasino.com</li>
-            <li>電話: 1234-5678</li>
-            <li>客服在線時間: 24/7</li>
-        </ul>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 線上娛樂城 - All rights reserved.</p>
-    </footer>
 
 </body>
 </html>
