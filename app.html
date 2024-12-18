@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>約炮APP網站</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #ff4b5c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff4b5c;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #d94449;
+        }
+        .link {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .link a {
+            color: #ff4b5c;
+            text-decoration: none;
+        }
+        .link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>歡迎來到約炮APP</h1>
+    <p>立即開始您的冒險</p>
+</header>
+
+<div class="container">
+    <!-- 登入區 -->
+    <div class="form-container">
+        <h2>登入</h2>
+        <form action="/login" method="post">
+            <input type="email" name="email" placeholder="輸入您的電子郵件" required>
+            <input type="password" name="password" placeholder="輸入密碼" required>
+            <button type="submit">登入</button>
+        </form>
+        <div class="link">
+            <p>還沒有帳號? <a href="#register">註冊新帳號</a></p>
+        </div>
+    </div>
+
+    <!-- 註冊區 -->
+    <div class="form-container" id="register">
+        <h2>註冊</h2>
+        <form action="/register" method="post">
+            <input type="text" name="username" placeholder="輸入您的名稱" required>
+            <input type="email" name="email" placeholder="輸入電子郵件" required>
+            <input type="password" name="password" placeholder="設定密碼" required>
+            <button type="submit">註冊</button>
+        </form>
+        <div class="link">
+            <p>已經有帳號? <a href="#login">登入</a></p>
+        </div>
+    </div>
+
+    <!-- 個人資料區 -->
+    <div class="form-container">
+        <h2>設定個人資料</h2>
+        <form action="/profile" method="post">
+            <input type="text" name="nickname" placeholder="暱稱" required>
+            <input type="text" name="age" placeholder="年齡" required>
+            <textarea name="bio" placeholder="簡短介紹自己" rows="4" required></textarea>
+            <button type="submit">儲存資料</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
