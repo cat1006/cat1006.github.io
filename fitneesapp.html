@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Weight Watch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #282c34;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .data {
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #61dafb;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #21a1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Smart Weight Watch</h1>
+    </header>
+
+    <div class="container">
+        <div class="data">
+            <strong>Heart Rate:</strong> <span id="heartRate">75 bpm</span>
+        </div>
+        <div class="data">
+            <strong>Steps:</strong> <span id="steps">8500</span>
+        </div>
+        <div class="data">
+            <strong>Calories Burned:</strong> <span id="caloriesBurned">250 kcal</span>
+        </div>
+
+        <button onclick="goToExercisePlan()">Go to Exercise Plan</button>
+    </div>
+
+    <script>
+        // 模擬從伺服器獲取數據
+        function updateHealthData() {
+            // 假設的健康數據
+            const healthData = {
+                heartRate: 78,
+                steps: 9000,
+                caloriesBurned: 280,
+            };
+
+            // 更新頁面上的數據
+            document.getElementById("heartRate").textContent = `${healthData.heartRate} bpm`;
+            document.getElementById("steps").textContent = healthData.steps;
+            document.getElementById("caloriesBurned").textContent = `${healthData.caloriesBurned} kcal`;
+        }
+
+        // 跳轉到運動計劃頁面（這裡只是模擬）
+        function goToExercisePlan() {
+            alert('Redirecting to Exercise Plan...');
+        }
+
+        // 頁面加載後自動更新數據
+        window.onload = updateHealthData;
+    </script>
+
+</body>
+</html>
